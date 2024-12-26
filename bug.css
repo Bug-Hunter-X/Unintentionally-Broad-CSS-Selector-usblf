@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates a common error where a selector is unintentionally too broad, leading to unintended styling changes across the website.  The `p` selector affects all paragraph elements, whereas the intention might have been to style paragraphs only within a specific section:
+
+```css
+p {
+  color: blue;
+}
+```
+
+This can unintentionally change the color of all paragraph elements, not just those within a particular area.  The cascading nature of CSS means that later, more specific selectors will override this, but it can make debugging difficult.
